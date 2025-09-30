@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdrenalineFlow - Tu CompaÃ±ero Anti-ProcrastinaciÃ³n</title>
+    <title>AdrenalineFlow - Tu Compañero Anti-Procrastinación</title>
     <style>
         * {
             margin: 0;
@@ -410,8 +410,8 @@
     <div class="app-container">
         <!-- Header -->
         <div class="header">
-            <h1>âš¡ AdrenalineFlow</h1>
-            <p>Tu compaÃ±ero personal para dominar la procrastinaciÃ³n buscando adrenalina</p>
+            <h1>⚡ AdrenalineFlow</h1>
+            <p>Tu compañero personal para dominar la procrastinación buscando adrenalina</p>
         </div>
 
         <!-- Stats Section -->
@@ -422,7 +422,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="streakDays">0</div>
-                <div class="stat-label">Racha (dÃ­as)</div>
+                <div class="stat-label">Racha (días)</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="adrenalinesUsed">0</div>
@@ -436,9 +436,9 @@
 
         <!-- Gamification Section -->
         <div class="gamification-section">
-            <h3>ðŸ† Logros Desbloqueados</h3>
+            <h3>🏆 Logros Desbloqueados</h3>
             <div id="achievements">
-                <span class="achievement-badge">ðŸš€ Primer Sprint</span>
+                <span class="achievement-badge">🚀 Primer Sprint</span>
             </div>
         </div>
 
@@ -446,7 +446,7 @@
         <div class="main-content">
             <!-- Timer Pomodoro Intensivo -->
             <div class="card timer-card">
-                <h2>â° Timer de Adrenalina</h2>
+                <h2>⏱️ Timer de Adrenalina</h2>
                 <div class="timer-display" id="timerDisplay">25:00</div>
                 <div class="timer-controls">
                     <button class="btn btn-primary" onclick="startTimer()">Iniciar</button>
@@ -457,16 +457,16 @@
                     <label for="timerType">Modo:</label>
                     <select id="timerType" class="form-control" onchange="changeTimerMode()">
                         <option value="25">Sprint Intenso (25 min)</option>
-                        <option value="15">RÃ¡faga RÃ¡pida (15 min)</option>
-                        <option value="45">DesafÃ­o Extremo (45 min)</option>
+                        <option value="15">Ráfaga Rápida (15 min)</option>
+                        <option value="45">Desafío Extremo (45 min)</option>
                         <option value="5">Micro-Sprint (5 min)</option>
                     </select>
                 </div>
             </div>
 
-            <!-- GestiÃ³n de Tareas con Mini-Deadlines -->
+            <!-- Gestión de Tareas con Mini-Deadlines -->
             <div class="card">
-                <h2>ðŸ“‹ Tareas con Mini-Deadlines</h2>
+                <h2>📋 Tareas con Mini-Deadlines</h2>
                 <form class="task-form" onsubmit="addTask(event)">
                     <div class="form-group">
                         <label for="taskTitle">Tarea:</label>
@@ -479,8 +479,8 @@
                     <div class="form-group">
                         <label for="taskPriority">Nivel de Urgencia:</label>
                         <select id="taskPriority" class="form-control">
-                            <option value="low">Baja PresiÃ³n</option>
-                            <option value="medium">PresiÃ³n Media</option>
+                            <option value="low">Baja Presión</option>
+                            <option value="medium">Presión Media</option>
                             <option value="high">Alta Adrenalina</option>
                         </select>
                     </div>
@@ -490,15 +490,15 @@
                 <div id="taskList" style="margin-top: 20px;"></div>
             </div>
 
-            <!-- EstimulaciÃ³n Alternativa -->
+            <!-- Estimulación Alternativa -->
             <div class="card">
-                <h2>âš¡ Generador de Adrenalina</h2>
-                <p>Cuando necesites estimulaciÃ³n sin esperar al Ãºltimo minuto:</p>
+                <h2>⚡ Generador de Adrenalina</h2>
+                <p>Cuando necesites estimulación sin esperar al último minuto:</p>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                    <button class="btn btn-success" onclick="adrenalineBoost('music')">ðŸŽµ MÃºsica Energizante</button>
-                    <button class="btn btn-success" onclick="adrenalineBoost('challenge')">ðŸŽ¯ Mini DesafÃ­o</button>
-                    <button class="btn btn-success" onclick="adrenalineBoost('competition')">ðŸ Competencia Virtual</button>
-                    <button class="btn btn-success" onclick="adrenalineBoost('reward')">ðŸŽ Sistema de Recompensas</button>
+                    <button class="btn btn-success" onclick="adrenalineBoost('music')">🎵 Música Energizante</button>
+                    <button class="btn btn-success" onclick="adrenalineBoost('challenge')">🎯 Mini Desafío</button>
+                    <button class="btn btn-success" onclick="adrenalineBoost('competition')">🏁 Competencia Virtual</button>
+                    <button class="btn btn-success" onclick="adrenalineBoost('reward')">🎁 Sistema de Recompensas</button>
                 </div>
                 
                 <div id="adrenalineContent" style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px; display: none;">
@@ -506,13 +506,13 @@
                 </div>
             </div>
 
-            <!-- Tracker de HÃ¡bitos -->
+            <!-- Tracker de Hábitos -->
             <div class="card">
-                <h2>ðŸ“ˆ Tracker de HÃ¡bitos Semanales</h2>
+                <h2>📈 Tracker de Hábitos Semanales</h2>
                 <div>
                     <h4>Trabajar en bloques intensos</h4>
                     <div class="habits-tracker" id="habitsTracker">
-                        <!-- Se generarÃ¡ dinÃ¡micamente -->
+                        <!-- Se generará dinámicamente -->
                     </div>
                 </div>
                 
@@ -538,7 +538,7 @@
     </div>
 
     <script>
-        // Estado de la aplicaciÃ³n
+        // Estado de la aplicación
         let appState = {
             tasks: JSON.parse(localStorage.getItem('adrenalineTasks') || '[]'),
             stats: JSON.parse(localStorage.getItem('adrenalineStats') || '{"tasksCompleted": 0, "streakDays": 0, "adrenalinesUsed": 0, "level": 1}'),
@@ -556,7 +556,7 @@
             if (!appState.timer.isRunning) {
                 appState.timer.isRunning = true;
                 appState.timer.interval = setInterval(updateTimer, 1000);
-                showNotification('âš¡ Â¡Timer iniciado! A darlo todo!');
+                showNotification('⚡ ¡Timer iniciado! A darlo todo!');
             }
         }
 
@@ -565,7 +565,7 @@
             if (appState.timer.interval) {
                 clearInterval(appState.timer.interval);
             }
-            showNotification('â¸ï¸ Timer pausado');
+            showNotification('⏸️ Timer pausado');
         }
 
         function resetTimer() {
@@ -574,7 +574,7 @@
             appState.timer.minutes = selectedTime;
             appState.timer.seconds = 0;
             updateTimerDisplay();
-            showNotification('ðŸ”„ Timer reiniciado');
+            showNotification('🔄 Timer reiniciado');
         }
 
         function updateTimer() {
@@ -584,7 +584,7 @@
                     pauseTimer();
                     appState.stats.adrenalinesUsed++;
                     updateStats();
-                    showNotification('ðŸŽ‰ Â¡Sprint completado! Â¡Eres increÃ­ble!');
+                    showNotification('🎉 ¡Sprint completado! ¡Eres increíble!');
                     checkAchievements();
                     return;
                 }
@@ -631,7 +631,7 @@
             document.getElementById('taskTitle').value = '';
             document.getElementById('taskDeadline').value = '';
             
-            showNotification('ðŸ“ Â¡Tarea agregada con deadline artificial!');
+            showNotification('🆕 ¡Tarea agregada con deadline artificial!');
         }
 
         function renderTasks() {
@@ -680,7 +680,7 @@
         }
 
         function formatTimeLeft(timeLeft) {
-            if (timeLeft < 0) return 'â° VENCIDO';
+            if (timeLeft < 0) return '⏰ VENCIDO';
             
             const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -699,7 +699,7 @@
                     appState.stats.tasksCompleted++;
                     task.wasCompleted = true;
                     updateStats();
-                    showNotification('ðŸŽ‰ Â¡Tarea completada! Â¡Adrenalina bien canalizada!');
+                    showNotification('🎉 ¡Tarea completada! ¡Adrenalina bien canalizada!');
                     checkAchievements();
                 }
                 saveData();
@@ -711,13 +711,13 @@
             appState.tasks = appState.tasks.filter(t => t.id !== id);
             saveData();
             renderTasks();
-            showNotification('ðŸ—‘ï¸ Tarea eliminada');
+            showNotification('🗑️ Tarea eliminada');
         }
 
         function startTaskTimer(id) {
             const task = appState.tasks.find(t => t.id === id);
             if (task) {
-                showNotification(`â° Timer iniciado para: ${task.title}`);
+                showNotification(`⏱️ Timer iniciado para: ${task.title}`);
                 startTimer();
             }
         }
@@ -729,20 +729,20 @@
             
             const boosts = {
                 music: {
-                    title: 'ðŸŽµ Playlist de Alta EnergÃ­a',
-                    content: 'Reproduce mÃºsica con BPM alto (120-140). GÃ©neros recomendados: EDM, Rock, Drum & Bass. Usa auriculares para mÃ¡xima inmersiÃ³n.'
+                    title: '🎵 Playlist de Alta Energía',
+                    content: 'Reproduce música con BPM alto (120-140). Géneros recomendados: EDM, Rock, Drum & Bass. Usa auriculares para máxima inmersión.'
                 },
                 challenge: {
-                    title: 'ðŸŽ¯ Mini DesafÃ­o InstantÃ¡neo',
-                    content: 'Completa esta tarea en exactamente 10 minutos. Si lo logras, ganas 10 puntos extra. Â¡El cronÃ³metro ya comenzÃ³!'
+                    title: '🎯 Mini Desafío Instantáneo',
+                    content: 'Completa esta tarea en exactamente 10 minutos. Si lo logras, ganas 10 puntos extra. ¡El cronómetro ya comenzó!'
                 },
                 competition: {
-                    title: 'ðŸ Competencia Virtual',
-                    content: 'Imagina que estÃ¡s compitiendo contra tu "yo" del dÃ­a anterior. Â¿Puedes superar tu tiempo? Â¡La carrera ya comenzÃ³!'
+                    title: '🏁 Competencia Virtual',
+                    content: 'Imagina que estás compitiendo contra tu "yo" del día anterior. ¿Puedes superar tu tiempo? ¡La carrera ya comenzó!'
                 },
                 reward: {
-                    title: 'ðŸŽ Sistema de Recompensas',
-                    content: 'Al completar esta tarea, te has ganado: 15 min de tu actividad favorita. Â¡Pero solo si la terminas en el tiempo lÃ­mite!'
+                    title: '🎁 Sistema de Recompensas',
+                    content: 'Al completar esta tarea, te has ganado: 15 min de tu actividad favorita. ¡Pero solo si la terminas en el tiempo límite!'
                 }
             };
             
@@ -752,7 +752,7 @@
             
             appState.stats.adrenalinesUsed++;
             updateStats();
-            showNotification('âš¡ Â¡Dosis de adrenalina activada!');
+            showNotification('⚡ ¡Dosis de adrenalina activada!');
         }
 
         // Habits tracking
@@ -789,7 +789,7 @@
             }
             saveData();
             initHabitsTracker();
-            showNotification('ðŸ“ˆ HÃ¡bito actualizado');
+            showNotification('📈 Hábito actualizado');
         }
 
         function updateHabitProgress() {
@@ -816,7 +816,7 @@
             const newLevel = Math.floor(appState.stats.tasksCompleted / 10) + 1;
             if (newLevel > appState.stats.level) {
                 appState.stats.level = newLevel;
-                showNotification(`ðŸŒŸ Â¡Nivel ${newLevel} alcanzado! Â¡Eres imparable!`);
+                showNotification(`🌟 ¡Nivel ${newLevel} alcanzado! ¡Eres imparable!`);
             }
         }
 
@@ -824,15 +824,15 @@
             const achievements = document.getElementById('achievements');
             
             if (appState.stats.tasksCompleted >= 5 && !achievements.innerHTML.includes('Sprint Master')) {
-                achievements.innerHTML += '<span class="achievement-badge">âš¡ Sprint Master</span>';
+                achievements.innerHTML += '<span class="achievement-badge">⚡ Sprint Master</span>';
             }
             
             if (appState.stats.adrenalinesUsed >= 10 && !achievements.innerHTML.includes('Adicto a la Adrenalina')) {
-                achievements.innerHTML += '<span class="achievement-badge">ðŸ”¥ Adicto a la Adrenalina</span>';
+                achievements.innerHTML += '<span class="achievement-badge">🔥 Adicto a la Adrenalina</span>';
             }
             
             if (appState.habits.length >= 7 && !achievements.innerHTML.includes('Semana Perfecta')) {
-                achievements.innerHTML += '<span class="achievement-badge">ðŸ† Semana Perfecta</span>';
+                achievements.innerHTML += '<span class="achievement-badge"> Semana Perfecta</span>';
             }
         }
 
@@ -859,7 +859,7 @@
             document.getElementById('taskModal').classList.remove('active');
         }
 
-        // Funciones especÃ­ficas para procrastinadores buscadores de adrenalina
+        // Funciones específicas para procrastinadores buscadores de adrenalina
         function createArtificialUrgency() {
             const urgentTasks = appState.tasks.filter(task => {
                 const timeLeft = new Date(task.deadline) - new Date();
@@ -867,17 +867,17 @@
             });
             
             if (urgentTasks.length > 0) {
-                showNotification(`âš ï¸ Â¡${urgentTasks.length} tareas urgentes! Â¡Es hora de la adrenalina!`);
+                showNotification(`⚠ ¡${urgentTasks.length} tareas urgentes! ¡Es hora de la adrenalina!`);
             }
         }
 
         function generateMotivationalPush() {
             const messages = [
-                "âš¡ Â¡La presiÃ³n te hace brillar! Â¡Aprovecha este momento!",
-                "ðŸ”¥ Tu mejor trabajo surge bajo presiÃ³n. Â¡DemuÃ©stralo!",
-                "ðŸš€ El tiempo se agota, pero tÃº tienes el control. Â¡Dale!",
-                "â° La adrenalina estÃ¡ fluyendo. Â¡CanalÃ­zala en productividad!",
-                "ðŸ’ª Los diamantes se forman bajo presiÃ³n. Â¡TÃº eres un diamante!"
+                "⚡ ¡La presión te hace brillar! ¡Aprovecha este momento!",
+                "🔥 Tu mejor trabajo surge bajo presión. ¡Demuéstralo!",
+                "🚀 El tiempo se agota, pero tú tienes el control. ¡Dale!",
+                " La adrenalina está fluyendo. ¡Canalízala en productividad!",
+                "💪 Los diamantes se forman bajo presión. ¡Tú eres un diamante!"
             ];
             
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -889,17 +889,17 @@
             const overdueTasks = incompleteTasks.filter(task => new Date(task.deadline) < new Date());
             
             if (overdueTasks.length > 2) {
-                showNotification("ðŸŽ¯ PatrÃ³n detectado: Varias tareas vencidas. Â¡Tiempo de crear nueva adrenalina!");
+                showNotification("🎯 Patrón detectado: Varias tareas vencidas. ¡Tiempo de crear nueva adrenalina!");
                 suggestAdrenalineStrategy();
             }
         }
 
         function suggestAdrenalineStrategy() {
             const strategies = [
-                "Convierte la prÃ³xima tarea en un desafÃ­o de velocidad",
+                "Convierte la próxima tarea en un desafío de velocidad",
                 "Crea un deadline artificial 2 horas antes del real",
                 "Divide la tarea grande en micro-sprints de 15 minutos",
-                "Imagina que estÃ¡s en una competencia contra tiempo",
+                "Imagina que estás en una competencia contra tiempo",
                 "Establece una recompensa inmediata al completar"
             ];
             
@@ -909,14 +909,14 @@
             const modalContent = document.getElementById('modalContent');
             
             modalContent.innerHTML = `
-                <h3>ðŸŽ¯ Estrategia Anti-ProcrastinaciÃ³n</h3>
+                <h3>🎯 Estrategia Anti-Procrastinación</h3>
                 <p><strong>Sugerencia personalizada:</strong></p>
                 <div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin: 15px 0;">
                     ${strategy}
                 </div>
-                <p>Â¿Listo para convertir la presiÃ³n en productividad?</p>
+                <p>¿Listo para convertir la presión en productividad?</p>
                 <button class="btn btn-primary" onclick="closeModal(); generateMotivationalPush();">
-                    Â¡SÃ­, vamos a hacerlo! âš¡
+                    ¡Sí, vamos a hacerlo! ⚡
                 </button>
             `;
             
@@ -928,13 +928,13 @@
             const urgentCompleted = appState.tasks.filter(task => {
                 const timeLeft = new Date(task.deadline) - new Date(task.createdAt);
                 const completionTime = new Date(task.deadline) - new Date();
-                return task.completed && completionTime < timeLeft * 0.3; // Completado en el Ãºltimo 30% del tiempo
+                return task.completed && completionTime < timeLeft * 0.3; // Completado en el último 30% del tiempo
             }).length;
             
             return urgentCompleted * 50 + appState.stats.adrenalinesUsed * 10 + appState.habits.length * 20;
         }
 
-        // FunciÃ³n para detectar el mejor momento del dÃ­a para cada usuario
+        // Función para detectar el mejor momento del día para cada usuario
         function trackProductivityPatterns() {
             const currentHour = new Date().getHours();
             const completedToday = appState.tasks.filter(task => {
@@ -949,15 +949,15 @@
             }
         }
 
-        // FunciÃ³n para sugerir el mejor momento para tareas importantes
+        // Función para sugerir el mejor momento para tareas importantes
         function suggestOptimalTime() {
             const patterns = JSON.parse(localStorage.getItem('productivityPatterns') || '{}');
             const bestHour = Object.keys(patterns).reduce((a, b) => patterns[a] > patterns[b] ? a : b, '9');
             
             if (Object.keys(patterns).length > 0) {
-                return `Tu hora mÃ¡s productiva es: ${bestHour}:00. Â¡Programa las tareas importantes para entonces!`;
+                return `Tu hora más productiva es: ${bestHour}:00. ¡Programa las tareas importantes para entonces!`;
             }
-            return "AÃºn estamos analizando tus patrones de productividad.";
+            return "Aún estamos analizando tus patrones de productividad.";
         }
 
         // Sistema de alertas inteligentes
@@ -966,7 +966,7 @@
                 createArtificialUrgency();
                 checkForProcrastinationPattern();
                 
-                // MotivaciÃ³n aleatoria cada 30 minutos si hay tareas pendientes
+                // Motivación aleatoria cada 30 minutos si hay tareas pendientes
                 const pendingTasks = appState.tasks.filter(task => !task.completed).length;
                 if (pendingTasks > 0 && Math.random() < 0.3) {
                     generateMotivationalPush();
@@ -974,7 +974,7 @@
             }, 30 * 60 * 1000); // Cada 30 minutos
         }
 
-        // FunciÃ³n para exportar datos y anÃ¡lisis
+        // Función para exportar datos y análisis
         function generateProductivityReport() {
             const report = {
                 totalTasks: appState.stats.tasksCompleted,
@@ -989,7 +989,7 @@
             const modalContent = document.getElementById('modalContent');
             
             modalContent.innerHTML = `
-                <h3>ðŸ“Š Tu Reporte de Productividad</h3>
+                <h3>📊 Tu Reporte de Productividad</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
                     <div style="background: #667eea; color: white; padding: 15px; border-radius: 10px; text-align: center;">
                         <div style="font-size: 2em; font-weight: bold;">${report.totalTasks}</div>
@@ -1009,7 +1009,7 @@
                     </div>
                 </div>
                 <div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin: 15px 0;">
-                    <h4>ðŸ’¡ Insight Personal:</h4>
+                    <h4>💡 Insight Personal:</h4>
                     <p>${report.optimalTime}</p>
                 </div>
                 <button class="btn btn-primary" onclick="closeModal()">Cerrar</button>
@@ -1018,18 +1018,18 @@
             modal.classList.add('active');
         }
 
-        // Agregar botÃ³n para el reporte
+        // Agregar botón para el reporte
         function addReportButton() {
             const header = document.querySelector('.header');
             const reportBtn = document.createElement('button');
             reportBtn.className = 'btn btn-secondary';
             reportBtn.style.marginTop = '15px';
-            reportBtn.textContent = 'ðŸ“Š Ver Reporte de Productividad';
+            reportBtn.textContent = '📊 Ver Reporte de Productividad';
             reportBtn.onclick = generateProductivityReport;
             header.appendChild(reportBtn);
         }
 
-        // InicializaciÃ³n
+        // Inicialización
         document.addEventListener('DOMContentLoaded', function() {
             // Cargar datos
             updateStats();
@@ -1043,7 +1043,7 @@
             
             // Mensaje de bienvenida
             setTimeout(() => {
-                showNotification('ðŸš€ Â¡Bienvenido a AdrenalineFlow! Tu compaÃ±ero para canalizar la procrastinaciÃ³n en productividad.');
+                showNotification('🚀 ¡Bienvenido a AdrenalineFlow! Tu compañero para canalizar la procrastinación en productividad.');
             }, 1000);
             
             // Configurar deadline por defecto (2 horas desde ahora)
@@ -1088,15 +1088,15 @@
             }
         });
 
-        // FunciÃ³n para limpiar tareas completadas
+        // Función para limpiar tareas completadas
         function clearCompletedTasks() {
             appState.tasks = appState.tasks.filter(task => !task.completed);
             saveData();
             renderTasks();
-            showNotification('ðŸ—‘ï¸ Tareas completadas eliminadas');
+            showNotification('🗑️ Tareas completadas eliminadas');
         }
 
-        // Agregar botÃ³n de limpieza
+        // Agregar botón de limpieza
         setTimeout(() => {
             const taskCard = document.querySelector('.card h2').parentElement;
             const clearBtn = document.createElement('button');
@@ -1107,7 +1107,7 @@
             taskCard.appendChild(clearBtn);
         }, 100);
 
-        // Web App Manifest para instalaciÃ³n mÃ³vil
+        // Web App Manifest para instalación móvil
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('data:text/javascript,console.log("AdrenalineFlow PWA ready")');
         }
